@@ -1160,7 +1160,7 @@ Moreover you can use the `filter` parameter to pass a nested `and`/`or`/`not` co
 query SearchPosts {
   searchPost(filter: {
     title: { wildcard: "S*" }
-    or: [
+    and: [
       { createdAt: { eq: "08/20/2018" } },
       { updatedAt: { eq: "08/20/2018" } }
     ]
